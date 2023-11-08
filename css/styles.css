@@ -1,4 +1,4 @@
-/* natural box model */
+/* NATURAL BOX MODEL */
 html {
   box-sizing: border-box;
 }
@@ -19,221 +19,77 @@ html {
   border: 0;
 }
 
-/* no break */
-.nobr {
-  white-space: nowrap;
-}
-
-
-/***********************************************/
 /* START STYLES HERE */
+/************************************************/
+
 /* COLORS */
 :root {
-  --darkgreen: #004643;
-  --beige: #FAF0E6;
-  --rose: #ECD6CC; 
-  --brown: #C5AB8E;
-  --transparent-beige: rgba(250, 240, 230, .8);
+  --darkgreen: #0B9B45;
+  --lightgreen: #8CC63F;
+  --beige: #FFF8EE;
+  --orange: #E67E22;
+  --purple: #CB7BFF; 
+  --transparent-lightgreen: rgba(140, 198, 63, .98);
 }
 
-
-/***********************************************/
 /* GENERAL STRUCTURE */
-body {
-  background-color: var(--darkgreen);
-}
-
+/***********************************************/
 main {
   background-color: var(--beige);
-  width: 70%;
-  margin: 0 /* 3.5em */ auto;
 }
 
-
+/* ALL PAGES */
 /***********************************************/
-/* STYLES FOR ALL PAGES */
-/* GENERAL TYPOGRAPHY */
-h1, h2 {
-  font-family: franklin-gothic-atf, sans-serif;
+
+/* TYPOGRAPHY */
+h1 {
+  font-family: "kepler-std", serif;
   font-weight: 700;
   font-style: normal;
-} 
-
-h1 {
-  font-size: 60px;
+  font-size: 100px; 
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 50px;
 }
 
-nav li, .button, footer a, nav p {
-  font-family: franklin-gothic-atf, sans-serif;
+nav li {
+  font-family: "kepler-std", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
 }
 
-p {
-  font-family: 'Shobhika';
-  font-size: 16px;
-}
-
-nav h1 {
-  font-weight: 400;
-  padding-left: 1.0em;
-  font-size: 20px;
-}
 
 /* BUTTONS AND LINKS */
-a:link, a:visited {
-  color: black;
-}
-
 a:hover, a:active {
-  color:var(--brown)
-}
-
-li a:hover, li a:active {
-  color: var(--brown);
-  text-decoration: underline;
-}
-
-.button:link, .button:visited {
-  background-color: var(--darkgreen);
-  color: var(--beige);
-  padding: 0.5em 1.0em;
-  text-decoration: none;
-  width: 121px;
-}
-
-.button:hover, .button:active {
-  /* text-decoration: underline; */
-  background-color: var(--beige);
-  border: solid var(--darkgreen) 2.0px;
-  color: var(--darkgreen);
+  color:var(--purple)
 }
 
 
-/***********************************************/
-/* NAVIGATION (ALL PAGES) */
+/* NAVIGATION */
 nav {
-  position: sticky;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  background-color: var(--beige);
-  border-bottom: solid black 1.0px;
-  padding: 0.5em 1.0em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-right: 1.0em;;
+  padding: 1.0em 0 0;
+  margin: 0;
 }
 
 nav li {
   list-style: none;
-  padding: 0 2.0em;
+  padding: 1.0em 0 0;
 }
 
 nav a {
   text-decoration: none;
-}
-
-.menu-button {
-  /* menu bars hidden to start */
-  display: none;
-  padding: 0.5rem 0;
-}
-.menu-button:hover {
-  /* menu bars need to act like a button */
-  color: var(--brown);
-  cursor: pointer;
-}
-
-/* NAVIGATION DROPDOWN STYLES */
-/* DEVELOPED DROPDOWN CODE FROM W3SCHOOLS.COM */
-/* https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_text */
-nav .dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-nav .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--rose);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 10;
-}
-
-nav .dropdown:hover .dropdown-content {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-}
-
-nav .dropdown span {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-nav .dropdown-content a {
-    padding: 0.5em;
+  color: var(--beige);
 }
 
 
-/***********************************************/
-/* FOOTER (ALL PAGES) */
+/* FOOTER */
 footer {
-  background-color: var(--brown);
+  background-color: var(--lightgreen);
   padding: 0.5em 2.0em 1.5em;
   border-top: solid black 1.0px;
 }
-
-
-/***********************************************/
-/* HEADER (HOME & RESUME PAGES*/
-#header1 {
-  background-image: url(../images/head.webp);
-  background-size: cover;
-  height: 400px;
-}
-
-#header1 .headline {
-  background-color: var(--transparent-beige);
-  width: 40%;
-  height: 400px;
-  position: relative;
-  z-index: 9;
-  padding: 2.0em;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#header1 .headline p {
-  padding-bottom: 1.0em;
-}
-
-#header1 .headline p {
-  font-size: 30px;
-  font-family: franklin-gothic-atf, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 1.5em;
-}
-
 
 /***********************************************/
 /* HEADER (WIREFRAME, WEB APP, TYPOGRAPHY PAGES */
@@ -248,7 +104,7 @@ footer {
 }
 
 #header2 .headline {
-  background-color: var(--transparent-beige);
+  background-color: var(--transparent-lightgreen);
   width: 55%;
   text-align: center;
   display: flex;
@@ -263,69 +119,29 @@ footer {
 /***********************************************/
 /* HOME PAGE STYLES */
 /* STRUCTURE */
-#home .banner {
-  background-color: var(--beige);
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#home #headerHome {
+  background-image: url('../images/header-img.png');
+  background-size: cover;
+  background-color: black;
+  color: var(--beige);
+  margin: 20px 0;
 }
 
-#home .banner p {
-  padding: 0;
+#home .overlay {
+  background-color: var(--transparent-lightgreen);
+}
+
+#home h1 {
+  text-align: center;
+  padding: 0 0 2em;
   margin: 0;
 }
 
-#home .about {
-  display: flex;
-  align-items: flex-start;
-  margin: 0;
-}
-
-#home .about section {
-  padding: 0 2.0em;
-}
-
-#home .about h2 {
-  margin-top: 1.0em;
-}
-
-#home .about ul {
-  list-style: none;
-  padding: 0;
-}
-
-#home .about li {
-  padding-bottom: 1.0em;
-}
-
-#home .projects {
-  padding: 2.0em;
-}
-
-#home .projects h2 {
-  margin-top: 0;
-}
-
-#home .project-images {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-#home .project-images .box {
-  border: solid black 1.0px;
-  padding: 2.0em;
-  width: 300px;
-  height: 345px;
-}
-
-#home .project-images {
-  display: flex;
-  justify-content: space-between;
-}
-
-#home img {
-  width: 100px;
+#home h1 span {
+  font-family: "kepler-std", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 50px;
 }
 
 /* TYPOGRAPHY */
@@ -337,7 +153,7 @@ footer {
 }
 
 #home .about {
-  background-color: var(--rose);
+  background-color: var(--orange);
 }
 
 #home .about {
@@ -381,7 +197,7 @@ footer {
 }
 
 #wireframe .content {
-  background-color: var(--rose);
+  background-color: var(--orange);
   width: 60%;
   padding: 2.0em 3.0em;
   margin-left: 4.0em;
@@ -442,7 +258,7 @@ footer {
 }
 
 #wireframe .btn:hover {
-  background-color: var(--rose);
+  background-color: var(--orange);
 }
 
 #wireframe .btn:active {
@@ -499,7 +315,7 @@ footer {
 }
 
 #typography article .word, #typography article .system {
-  background-color: var(--rose);
+  background-color: var(--orange);
 }
 
 #typography .button {
@@ -551,7 +367,7 @@ footer {
   width: 70%;
   padding: 1.0em;
   border: solid black 0.5px;
-  background-color: var(--rose);
+  background-color: var(--orange);
   margin-top: 1.0em;
 }
 
