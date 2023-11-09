@@ -54,9 +54,10 @@ main {
 /* STYLES FOR ALL PAGES */
 /* GENERAL TYPOGRAPHY */
 h1, h2 {
-  font-family: franklin-gothic-atf, sans-serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "kepler-std", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 100px; 
 } 
 
 h1 {
