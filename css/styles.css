@@ -38,25 +38,28 @@ main {
   background-color: var(--beige);
 }
 
-/* ALL PAGES */
+/* ALL PAGE STYLES */
 /***********************************************/
-
-/* TYPOGRAPHY */
-h1 {
+/*TYPOGRAPHY */
+h1, h2 {
   font-family: "kepler-std", serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 100px; 
+  font-weight: 900; 
+}
+
+h1 {
+  font-size: 100px;
 }
 
 h2 {
   font-size: 50px;
 }
 
-nav li {
+p, a, li {
   font-family: "kepler-std", serif;
   font-weight: 400;
-  font-style: normal;
+}
+
+nav li {
   font-size: 16px;
 }
 
@@ -91,8 +94,8 @@ footer {
   border-top: solid black 1.0px;
 }
 
-/***********************************************/
 /* HEADER (WIREFRAME, WEB APP, TYPOGRAPHY PAGES */
+/***********************************************/
 #header2 {
   background-image: url(../images/head3.webp);
   background-size: cover;
@@ -116,9 +119,9 @@ footer {
   margin: 0 auto;
 }
 
-/***********************************************/
 /* HOME PAGE STYLES */
-/* STRUCTURE */
+/***********************************************/
+/* HOME STRUCTURE */
 #home #headerHome {
   background-image: url('../images/header-img.png');
   background-size: cover;
@@ -138,39 +141,34 @@ footer {
 }
 
 #home h1 span {
-  font-family: "kepler-std", serif;
   font-weight: 400;
   font-style: italic;
   font-size: 50px;
 }
 
-/* TYPOGRAPHY */
-#home .banner p {
-  font-size: 20px;
-  font-family: franklin-gothic-atf, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
+/* HOME TYPOGRAPHY */
 #home .about {
   background-color: var(--orange);
+  padding: 50px;
 }
 
-#home .about {
-  font-family: franklin-gothic-atf, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 17px;
+#home .about h2 {
+  padding: 0 0 20px 0;
+  margin: 0;
 }
 
-#home .box p {
-  text-align: center;
-  font-family: franklin-gothic-atf, sans-serif;
-  font-weight: 400;
-  font-style: normal;
+#home .about ul {
+  padding: 0;
+  margin: 0;
 }
 
-/* IMAGES */
+#home .about li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* HOME IMAGES */
 #home .about img {
   width: 45%;
 }
