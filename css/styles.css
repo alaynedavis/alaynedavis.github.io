@@ -41,22 +41,25 @@ main {
 /* ALL PAGE STYLES */
 /***********************************************/
 /*TYPOGRAPHY */
-h1, h2 {
-  font-family: "kepler-std", serif;
-  font-weight: 900; 
-}
 
 h1 {
   font-size: 100px;
+  font-family: "kepler-std", serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 h2 {
   font-size: 50px;
+  font-family: "kepler-std", serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 p, a, li {
   font-family: "kepler-std", serif;
-  font-weight: 400;
+  font-weight: 300;
+  font-style: normal;
 }
 
 nav li {
@@ -141,7 +144,7 @@ footer {
 }
 
 #home h1 span {
-  font-weight: 400;
+  font-weight: 500;
   font-style: italic;
   font-size: 50px;
 }
