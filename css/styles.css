@@ -56,14 +56,15 @@ h2 {
   font-style: normal;
 }
 
-p, a, li {
+p {
   font-family: "kepler-std", serif;
   font-weight: 300;
   font-style: normal;
 }
 
 nav li {
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 
@@ -75,18 +76,30 @@ a:hover, a:active {
 
 /* NAVIGATION */
 nav {
-  padding: 1.0em 0 0;
+  margin: 0 2.0em;
+  padding-bottom: 1.5em;
+  border-left: 5px solid var(--beige);
+}
+
+nav ul {
   margin: 0;
+  padding: 0;
 }
 
 nav li {
   list-style: none;
-  padding: 1.0em 0 0;
+  padding: 1.5em 1.0em 0;
 }
 
 nav a {
   text-decoration: none;
   color: var(--beige);
+}
+
+nav .nav-line {
+  background-color: var(--beige);
+  width: 10px;
+  margin: 0;
 }
 
 
@@ -106,6 +119,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0;
 
 }
 
@@ -115,6 +129,7 @@ footer {
   text-align: center;
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 
 #wireframe .content {
@@ -390,9 +405,6 @@ No media query for `xs` since this is the default */
     flex-direction: column;
     align-items: flex-end;
     width: 100%;
-  }
-  nav li {
-    padding: 0;
   }
 
   /* RWD MENU PLUGIN */
