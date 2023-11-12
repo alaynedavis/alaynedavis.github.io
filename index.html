@@ -12,6 +12,8 @@
     <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
     <!-- ADOBE FONTS -->
     <link rel="stylesheet" href="https://use.typekit.net/wvk4obh.css">
+    <!-- BOOTSTRAP STYLES -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- CUSTOM STYLES -->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -20,32 +22,145 @@
 <body>
 
     <main id="home">
-        <header id="headerHome">
-            <div class="overlay">
-                <nav>
-                    <div class="nav-line"></div>
-                    <ul>
-                        <li><a class="menuItem" href="index.html">HOME</a></li>
-                        <li><a class="menuItem" href="projects.html">PROJECTS</a></li>
-                        <li><a class="menuItem" href="resume.html">RESUME</a></li>
-                        <li><a class="menuItem" href="#contact">CONTACT</a></li>
-                    </ul>
-                </nav>
-                <h1><span class="greeting">Hello! My name is</span><br>ALAYNE DAVIS</h1>
-            </div>
+        <header id="header">
+            <nav>
+                <div class="nav-line"></div>
+                <ul>
+                    <li><a class="menuItem" href="index.html">HOME</a></li>
+                    <li><a class="menuItem" href="projects.html">PROJECTS</a></li>
+                    <li><a class="menuItem" href="resume.html">RESUME</a></li>
+                    <li><a class="menuItem" href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <h1><span class="greeting">Hello! My name is</span><br>ALAYNE DAVIS</h1>
         </header>
 
-        <article class="about-section">
-            <h2 class="about-header">ABOUT ME</h2>
-            <img src="images/about.webp">
-            <h3>EDUCATION & WORK</h3>
-            <div class="about-writing">
-                <p>I’m currently in my last year of undergrad at Indiana University Bloomington working toward my Informatics B.S. degree that I will earn in May of 2024. Within informatics, I specialized in graphic design, so I have taken many graphic design courses as well as informatics courses. My minors are in Web Design and Human-Centered Computing.</p>
-                <p>Currently, I am working part time as a student web developer for one of the professors at the Eskenazi School of Art. I am working on a small team to develop a digital exhibition for the professor to display her collection of historic uniforms.</p>
+        <section class="about-section">
+            
+            <div class="education">
+                <h2 class="about-header">ABOUT ME</h2>
+                <img class="education-img" src="images/about-education.webp">
+                <h3>EDUCATION & WORK</h3>
+                <div class="about-writing">
+                    <p>I’m currently in my last year of undergrad at Indiana University Bloomington working toward my Informatics B.S. degree that I will earn in May of 2024. Within informatics, I specialized in graphic design, so I have taken many graphic design courses as well as informatics courses. My minors are in Web Design and Human-Centered Computing.</p>
+                    <p>Currently, I am working part time as a student web developer for one of the professors at the Eskenazi School of Art. I am working on a small team to develop a digital exhibition for the professor to display her collection of historic uniforms.</p>
+                </div>
             </div>
-            <h3>SKILLS</h3>
-            <a class="resume-download" href="images/Resume.pdf" download>Download My Resume!</a>
-        </article>
+
+            <div class="skills">
+                <h3>SKILLS</h3>
+
+                <div class="container softwares">
+                    <div class="row">
+                    <div class="col col-12 grid-header">
+                        Softwares & Programs
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col skill">
+                            Adobe Illustrator
+                        </div>
+                        <div class="col skill">
+                            Adobe InDesign
+                        </div>
+                        <div class="col skill">
+                            Adobe Photoshop
+                        </div>
+                        <div class="col skill">
+                            Figma
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col skill">
+                            Google Workspace
+                        </div>
+                        <div class="col skill">
+                            Microsoft Office
+                        </div>
+                        <div class="col skill">
+                            Github/Git
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container languages">
+                    <div class="row">
+                    <div class="col col-12 grid-header">
+                        Languages
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col skill">
+                            HTML
+                        </div>
+                        <div class="col skill">
+                            CSS
+                        </div>
+                        <div class="col skill">
+                            PHP
+                        </div>
+                        <div class="col skill">
+                            SQL
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col skill">
+                            Python
+                        </div>
+                        <div class="col skill">
+                            JavaScript
+                        </div>
+                        <div class="col skill">
+                            Markdown
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container soft-skills">
+                    <div class="row">
+                    <div class="col col-12 grid-header">
+                        Soft Skills
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col skill">
+                            Creativity
+                        </div>
+                        <div class="col skill">
+                            Organization
+                        </div>
+                        <div class="col skill">
+                            Detail-Oriented
+                        </div>
+                        <div class="col skill">
+                            Collaboration
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col skill">
+                            Communication
+                        </div>
+                        <div class="col skill">
+                            Reliablity
+                        </div>
+                        <div class="col skill">
+                            Hard-Working
+                        </div>
+                    </div>
+                </div>
+
+                <a class="resume-download" href="images/Resume.pdf" download>Download My Resume!</a>
+            </div>
+
+            <div class="personality">
+                <img class="personality-img"" src="images/about-personality.jpg">
+                <div>
+                    <h3>INTERESTS & <br> PERSONALITY</h3>
+                    <p>I’ve always enjoyed being creative since I was a little kid. As I have grown up, I have realized my passion for being able to create and design things digitally that are unique and interesting. I am a big fan of not just doing something because everyone else is doing it. I think it’s important to be able to bring personality into design.</p>
+                    <p>Besides my love for all things creativity and design, I’m also a big lover of the outdoors, and I especially love walking and hiking. It’s a dream of mine to be able to travel to as many of the National Parks as I can. I also have very recently started learning about Pilates, and I try to incorporate it into my weeks to stay active and healthy.</p>
+                </div>
+            </div>
+        </section>
 
         <footer id="contact">
             <h3>CONTACT INFO</h3>

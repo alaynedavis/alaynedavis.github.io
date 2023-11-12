@@ -65,6 +65,14 @@ h3 {
   color: var(--charcoal);
 }
 
+h4 {
+  font-size: 25px;
+  font-family: "kepler-std", serif;
+  font-weight: 900;
+  font-style: normal;
+  color: var(--charcoal);
+}
+
 p {
   font-size: 22px;
   font-family: "kepler-std", serif;
@@ -74,7 +82,9 @@ p {
 }
 
 nav li {
-  font-weight: 400;
+  font-family: "kepler-std", serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 18px;
 }
 
@@ -86,14 +96,19 @@ a:hover, a:active {
 
 /* NAVIGATION */
 nav {
+  display: flex;
   margin: 0 2.0em;
-  padding-bottom: 1.5em;
-  border-left: 5px solid var(--beige);
+}
+
+nav .nav-line {
+  margin: 1.0em 0;
+  background-color: var(--beige);
+  width: 3px;
 }
 
 nav ul {
   margin: 0;
-  padding: 1.0em 0;
+  padding: 0.5em 0 2.0em;
 }
 
 nav li {
@@ -106,11 +121,6 @@ nav a {
   color: var(--beige);
 }
 
-nav .nav-line {
-  background-color: var(--beige);
-  width: 10px;
-}
-
 
 /* FOOTER */
 footer {
@@ -119,49 +129,15 @@ footer {
   border-top: solid black 1.0px;
 }
 
-/* HEADER (WIREFRAME, WEB APP, TYPOGRAPHY PAGES */
-/***********************************************/
-#header2 {
-  background-image: url(../images/head3.webp);
-  background-size: cover;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-
-}
-
-#header2 .headline {
-  background-color: var(--transparent-lightgreen);
-  width: 55%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-}
-
-#wireframe .content {
-  width: 100%;
-  margin: 0 auto;
-}
-
 /* HOME PAGE STYLES */
 /***********************************************/
 /* HOME STRUCTURE */
-#home #headerHome {
-  background-image: url('../images/header-img.png');
-  background-size: cover;
-  background-color: black;
-  color: var(--beige);
-  margin: 0;
-}
-
-#home .overlay {
-  background-color: var(--transparent-lightgreen);
+#home #header {
+  background-color: var(--lightgreen);
 }
 
 #home h1 {
+  color: var(--beige);
   text-align: center;
   padding: 0 0 1.5em;
   margin: 0;
@@ -174,8 +150,8 @@ footer {
 }
 
 /* HOME TYPOGRAPHY */
-#home .about-section {
-  margin: 100px 0;
+#home .education {
+  margin: 100px 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,15 +164,15 @@ footer {
 }
 
 #home h3 {
-  margin: 1.0em 0 0;
+  margin: 1.0em 0 0.5em;
 }
 
-#home img {
+#home .education-img {
   width: 800px;
   border-radius: 50% 50% 0 0;
 }
 
-#home p {
+#home .education p {
   padding: 1.0em 3.0em 0;
   width: 900px;
   line-height: 1.7em;;
@@ -208,17 +184,83 @@ footer {
   font-size: 20px;
   text-decoration: none;
   color: var(--charcoal);
-  background-color: var(--purple);
-  border: 2px solid var(--purple);
+  border: 2px solid var(--charcoal);
+  border-radius: 10px;
   padding: 0.5em 2.0em;
-  margin: 1.0em 0 0;
+  margin: 3.0em 0 0;
 }
 
 #home .about-section a:hover {
-  background-color: var(--beige);
+  color: var(--beige);
+  background-color: var(--charcoal);
+  border: 2px solid var(--charcoal);
+}
+
+#home .skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .container {
+  width: 60%;
+}
+
+#home .col {
+  font-family: "kepler-std", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+#home .softwares .skill {
+  color: var(--lightgreen);
+  border: 2px solid var(--lightgreen);
+}
+
+#home .languages .skill {
+  color: var(--purple);
   border: 2px solid var(--purple);
 }
 
+#home .soft-skills .skill {
+  color: var(--orange);
+  border: 2px solid var(--orange);
+}
+
+#home .grid-header {
+  color: var(--charcoal);
+  font-family: "kepler-std", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 20px;
+  border: none;
+  margin: 0.5em 0 0;
+}
+
+#home .personality {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5.0em 0;
+}
+
+#home .personality .personality-img {
+  width: 35%;
+  border-radius: 50% 50% 0 0;
+  margin: 0 3.0em 0 0;
+}
+
+#home .personality p {
+  width: 600px;
+  line-height: 1.7em;
+  margin-top: 2.0em;
+}
 
 /***********************************************/
 /* WIREFRAME PAGE STYLES */
