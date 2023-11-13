@@ -155,6 +155,11 @@ footer {
   padding: 0.5em 2.0em 1.5em;
 }
 
+footer h3, footer p {
+  text-align: left;
+  color: var(--beige);
+}
+
 /* HOME PAGE STYLES */
 /***********************************************/
 #home h1 {
@@ -270,6 +275,10 @@ footer {
   align-items: center;
   padding: 5.5em 0;
   margin: 0;
+}
+
+#home .personality h3 {
+  text-align: left;
 }
 
 #home .personality .personality-img {
