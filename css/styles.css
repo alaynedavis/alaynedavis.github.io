@@ -48,6 +48,13 @@ body {
 
 section {
   background-color: var(--beige);
+  margin: 0;
+  padding: 4.0em 0;
+}
+
+article {
+  margin: 0;
+  padding: 1.0em 0;
 }
 
 /*TYPOGRAPHY */
@@ -63,6 +70,19 @@ h2 {
   font-family: "kepler-std", serif;
   font-weight: 900;
   font-style: normal;
+  text-align: center;
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.purple {
+  color: var(--purple);
+}
+
+.green {
+  color: var(--lightgreen);
 }
 
 h3 {
@@ -89,6 +109,7 @@ p {
   font-weight: 300;
   font-style: normal;
   color: var(--charcoal);
+  line-height: 1.7em;
 }
 
 nav li {
@@ -163,15 +184,7 @@ footer h3, footer p {
 /* HOME PAGE STYLES */
 /***********************************************/
 #home h1 {
-  color: var(--beige);
-  text-align: center;
   margin: -0.5em 0 0.5em;
-  padding: 0;
-}
-
-#home section {
-  background-color: var(--beige);
-  margin: 0;
 }
 
 #home h1 span {
@@ -181,7 +194,6 @@ footer h3, footer p {
 }
 
 #home .education {
-  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -190,7 +202,6 @@ footer h3, footer p {
 
 #home .about-header {
   color: var(--orange);
-  margin: 1.0em 0 0;
 }
 
 #home .education-img {
@@ -201,7 +212,6 @@ footer h3, footer p {
 #home .education p {
   padding: 1.0em 3.0em 0;
   width: 900px;
-  line-height: 1.7em;;
 }
 
 #home .about-section a {
@@ -212,8 +222,6 @@ footer h3, footer p {
   color: var(--charcoal);
   border: 2px solid var(--charcoal);
   border-radius: 10px;
-  padding: 0.5em 2.0em;
-  margin: 3.0em 0 0;
 }
 
 #home .about-section a:hover {
@@ -273,8 +281,6 @@ footer h3, footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5.5em 0;
-  margin: 0;
 }
 
 #home .personality h3 {
@@ -289,16 +295,25 @@ footer h3, footer p {
 
 #home .personality p {
   width: 600px;
-  line-height: 1.7em;
   margin-top: 2.0em;
 }
 
 
 /* PROJECTS PAGE STYLES */
 /***********************************************/
-#projects article {
-  padding: 1.0em 0.5em;
+
+/* CODING PAGE STYLES */
+/***********************************************/
+
+/* PROTOTYPING PAGE STYLES */
+/***********************************************/
+#prototyping h1 {
+  margin: -0.5em 0 0.5em;
 }
+
+/* GRAPHIC DESIGN PAGE STYLES */
+/***********************************************/
+
 
 /* MEDIA QUERIES FROM SMALLEST TO LARGEST */
 /***********************************************/
