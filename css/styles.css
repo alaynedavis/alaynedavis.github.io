@@ -120,9 +120,7 @@ nav li {
 }
 
 /* BUTTONS AND LINKS */
-a:hover, a:active {
-  color:var(--purple)
-}
+
 
 /* NAVIGATION */
 nav {
@@ -158,15 +156,20 @@ nav a {
   color: var(--beige);
 }
 
+nav a:hover, nav a:active {
+  color: var(--purple);
+}
+
 /* HEADER */
 #header {
-  padding: 0 0 7.5em;
+  background-color: var(--lightgreen);
+  padding: 0 0 10.0em;
 }
 
 #header h1 {
   color: var(--beige);
   text-align: center;
-  margin: 0 0 1.5em;
+  margin: -1.0em 0 0;
   padding: 0;
 }
 
@@ -183,9 +186,9 @@ footer h3, footer p {
 
 /* HOME PAGE STYLES */
 /***********************************************/
-#home h1 {
+/* #home h1 {
   margin: -0.5em 0 0.5em;
-}
+} */
 
 #home h1 span {
   font-weight: 500;
@@ -277,6 +280,11 @@ footer h3, footer p {
   margin: 0.5em 0 0;
 }
 
+#home .resume-btn {
+  margin: 3.0em 0;
+  padding: 0.5em 1.0em;
+}
+
 #home .personality {
   display: flex;
   justify-content: center;
@@ -298,12 +306,34 @@ footer h3, footer p {
   margin-top: 2.0em;
 }
 
-
 /* PROJECTS PAGE STYLES */
 /***********************************************/
+#projects .new-page {
+  text-decoration: none;
+}
+
+#projects .coding .new-page:hover {
+  text-decoration: underline;
+  color: var(--orange);
+}
+
+#projects .prototyping .new-page:hover {
+  text-decoration: underline;
+  color: var(--lightgreen);
+}
+
+#projects .graphic-design .new-page:hover {
+  text-decoration: underline;
+  color: var(--purple);
+}
 
 /* CODING PAGE STYLES */
 /***********************************************/
+iframe {
+  height: 400px;
+  width: 900px;
+  margin: 0 auto;
+}
 
 /* PROTOTYPING PAGE STYLES */
 /***********************************************/
@@ -313,6 +343,9 @@ footer h3, footer p {
 
 /* GRAPHIC DESIGN PAGE STYLES */
 /***********************************************/
+#design h1 {
+  margin: -0.5em 0 0.5em;
+}
 
 
 /* MEDIA QUERIES FROM SMALLEST TO LARGEST */
