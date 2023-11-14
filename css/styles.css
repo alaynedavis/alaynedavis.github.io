@@ -66,7 +66,7 @@ h1 {
 }
 
 h2 {
-  font-size: 130px;
+  font-size: 100px;
   font-family: "kepler-std", serif;
   font-weight: 900;
   font-style: normal;
@@ -97,9 +97,9 @@ h3 {
 }
 
 h4 {
-  font-size: 25px;
+  font-size: 20px;
   font-family: "kepler-std", serif;
-  font-weight: 900;
+  font-weight: 500;
   font-style: normal;
   color: var(--charcoal);
 }
@@ -117,7 +117,7 @@ nav li {
   font-family: "kepler-std", serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /* BUTTONS AND LINKS */
@@ -125,31 +125,30 @@ nav li {
 
 /* NAVIGATION */
 nav {
-  /* position: sticky;
+  background-color: var(--lightgreen);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
   z-index: 10;
   top: 0;
-  left: 0; */
-  display: flex;
+  left: 0;
   margin: 0;
-  padding: 1.0em 0 1.0em 0.7em;
-  background-color: var(--transparent-lightgreen);
-  width: 145px;
-}
-
-nav .nav-line {
-  margin: 0 0 0 0.5em;
-  padding-right: 0.2em;
-  background-color: var(--beige);
+  padding: 5px 0 20px;
 }
 
 nav ul {
-  margin: 0;
-  padding: 0.5em 0 2.0em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 15px;
 }
 
 nav li {
   list-style: none;
-  padding: 1.5em 1.0em 0;
+  padding: 1.5em 2.0em 0;
+  margin: 0;
 }
 
 nav a {
@@ -161,6 +160,13 @@ nav a:hover, nav a:active {
   color: var(--purple);
 }
 
+nav .nav-line {
+  background-color: var(--beige);
+  height: 2px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
 /* HEADER */
 #header {
   background-color: var(--lightgreen);
@@ -170,7 +176,7 @@ nav a:hover, nav a:active {
 #header h1 {
   color: var(--beige);
   text-align: center;
-  margin: -0.7em 0 0;
+  margin: 1.6em 0 0.6em;
   padding: 0;
 }
 
@@ -187,9 +193,9 @@ footer h3, footer p {
 
 /* HOME PAGE STYLES */
 /***********************************************/
-/* #home h1 {
-  margin: -0.5em 0 0.5em;
-} */
+#home h1 {
+  margin: 1.0em 0 0;
+}
 
 #home h1 span {
   font-weight: 500;
@@ -338,8 +344,8 @@ iframe {
 
 /* PROTOTYPING PAGE STYLES */
 /***********************************************/
-#prototyping h1 {
-  margin: -0.5em 0 0.5em;
+#prototyping #header h1 {
+  margin: 1.0em 0 0;
 }
 
 /* GRAPHIC DESIGN PAGE STYLES */
@@ -348,8 +354,8 @@ iframe {
   padding: 4.0em;
 }
 
-#design h1 {
-  margin: -0.5em 0 0.5em;
+#design #header h1 {
+  margin: 1.0em 0 0;
 }
 
 #design h4 {
