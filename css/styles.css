@@ -1,0 +1,669 @@
+/* NATURAL BOX MODEL */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* UTILITIES */
+/* hides an element on screen, but not from screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* START STYLES HERE */
+/************************************************/
+
+/* COLORS */
+:root {
+  --darkgreen: #0B9B45;
+  --lightgreen: #8CC63F;
+  --beige: #FFF8EE;
+  --orange: #E67E22;
+  --purple: #CB7BFF; 
+  --charcoal: #2E2E2E;
+  --transparent-lightgreen: rgba(140, 198, 63, .6);
+}
+
+/* GENERAL STRUCTURE */
+/***********************************************/
+main {
+  background-color: var(--lightgreen);
+}
+
+/* ALL PAGE STYLES */
+/***********************************************/
+/* STRUCTURE */
+body {
+  background-color: var(--lightgreen);
+}
+
+section {
+  background-color: var(--beige);
+  margin: 0;
+  padding: 4.0em 0;
+}
+
+article {
+  margin: 0;
+  padding: 1.0em 0;
+}
+
+/*TYPOGRAPHY */
+h1 {
+  font-size: 120px;
+  font-family: "kepler-std", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 110px;
+  font-family: "kepler-std", serif;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+  margin: 50px 0 10px;
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.purple {
+  color: var(--purple);
+}
+
+.green {
+  color: var(--lightgreen);
+}
+
+h3 {
+  font-size: 60px;
+  font-family: "kepler-std", serif;
+  font-weight: 900;
+  font-style: normal;
+  color: var(--charcoal);
+  margin: 1.0em 0 0.5em;
+  text-align: center;
+}
+
+.footer {
+  margin: 0 0 0.5em;
+  padding: 0;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: "kepler-std", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--charcoal);
+}
+
+p {
+  font-size: 22px;
+  font-family: "kepler-std", serif;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--charcoal);
+  line-height: 1.7em;
+}
+
+nav li {
+  font-family: "kepler-std", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+
+/* BUTTONS AND LINKS */
+.button {
+  font-family: "kepler-std", serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--charcoal);
+  background-color: var(--beige);
+  border: 2px solid var(--charcoal);
+  border-radius: 10px;
+  padding: 0.4em 3.0em;
+  margin: 40px 0 50px;
+}
+
+.button:hover {
+  color: var(--beige);
+  background-color: var(--charcoal);
+  border: 2px solid var(--charcoal);
+}
+
+/* NAVIGATION */
+nav {
+  background-color: var(--lightgreen);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 5px 0 20px;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 15px;
+}
+
+nav li {
+  list-style: none;
+  padding: 1.5em 2.0em 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--beige);
+}
+
+nav a:hover, nav a:active {
+  color: var(--purple);
+}
+
+nav .nav-line {
+  background-color: var(--beige);
+  height: 2px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+#header {
+  background-color: var(--lightgreen);
+  padding: 0 0 11.0em;
+}
+
+#header h1 {
+  color: var(--beige);
+  text-align: center;
+  margin: 1.6em 0 0.6em;
+  padding: 0;
+}
+
+
+/* FOOTER */
+footer {
+  padding: 3.0em 2.0em 1.5em;
+}
+
+footer h3, footer p {
+  text-align: left;
+  color: var(--beige);
+}
+
+/* HOME PAGE STYLES */
+/***********************************************/
+#home h1 {
+  margin: 1.0em 0 0;
+}
+
+#home h1 span {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 70px;
+}
+
+#home .education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#home .about-header {
+  color: var(--orange);
+}
+
+#home .education-img {
+  width: 800px;
+  border-radius: 50% 50% 0 0;
+}
+
+#home .education p {
+  padding: 1.0em 3.0em 0;
+  width: 900px;
+}
+
+#home .skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .container {
+  width: 60%;
+}
+
+#home .col {
+  font-family: "kepler-std", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+#home .softwares .skill {
+  color: var(--lightgreen);
+  border: 2px solid var(--lightgreen);
+}
+
+#home .languages .skill {
+  color: var(--purple);
+  border: 2px solid var(--purple);
+}
+
+#home .soft-skills .skill {
+  color: var(--orange);
+  border: 2px solid var(--orange);
+}
+
+#home .grid-header {
+  color: var(--charcoal);
+  font-family: "kepler-std", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 20px;
+  border: none;
+  margin: 0.5em 0 0;
+}
+
+#home .button {
+  margin-top: 70px;
+}
+
+#home .personality {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .personality h3 {
+  text-align: left;
+}
+
+#home .personality .personality-img {
+  width: 35%;
+  border-radius: 50% 50% 0 0;
+  margin: 0 3.0em 0 0;
+}
+
+#home .personality p {
+  width: 600px;
+  margin-top: 2.0em;
+}
+
+/* PROJECTS PAGE STYLES */
+/***********************************************/
+#projects .new-page {
+  text-decoration: none;
+}
+
+#projects .coding .new-page:hover {
+  text-decoration: underline;
+  color: var(--orange);
+}
+
+#projects .prototyping .new-page:hover {
+  text-decoration: underline;
+  color: var(--lightgreen);
+}
+
+#projects .graphic-design .new-page:hover {
+  text-decoration: underline;
+  color: var(--purple);
+}
+
+/* CODING PAGE STYLES */
+/***********************************************/
+#coding .project-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 50px;
+}
+
+#coding p {
+  width: 900px;
+}
+
+iframe {
+  height: 400px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+/* PROTOTYPING PAGE STYLES */
+/***********************************************/
+#prototyping #header h1 {
+  margin: 1.0em 0 0;
+}
+
+/* GRAPHIC DESIGN PAGE STYLES */
+/***********************************************/
+#design section {
+  padding: 4.0em;
+}
+
+#design #header h1 {
+  margin: 1.0em 0 0;
+}
+
+#design h3 {
+  margin-top: 110px;
+}
+
+#design h4 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#design .project-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 50px;
+}
+
+#design p {
+  width: 900px;
+}
+
+/* RESUME PAGE STYLES */
+/***********************************************/
+#resume section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#resume img {
+  width: 800px;
+}
+
+#resume .button {
+  margin-top: 100px;
+}
+
+/* #design .button {
+  font-family: "kepler-std", serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--charcoal);
+  background-color: var(--beige);
+  border: 2px solid var(--charcoal);
+  border-radius: 10px;
+  padding: 0.2em 1.0em;
+  margin-bottom: 40px;
+}
+
+#design .button:hover {
+  color: var(--beige);
+  background-color: var(--charcoal);
+  border: 2px solid var(--charcoal);
+} */
+
+#design .imgs {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#design .orig {
+  margin-right: 225px;
+}
+
+#design .orig-img {
+  width: 400px;
+}
+
+#design .redesign {
+  margin-left: 225px;
+}
+
+#design .redesign-img {
+  width: 400px;
+}
+
+#design .flyer {
+  width: 400px;
+  margin-right: 50px;
+}
+
+#design .buttons {
+  width: 305px;
+  margin-left: 50px;
+}
+
+#design .letter {
+  width: 300px;
+}
+
+#design .word {
+  width: 900px;
+}
+
+#design .list {
+  width: 370px;
+}
+
+#design .system {
+  width: 420px;
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST */
+/***********************************************/
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+  main { 
+    width: 100%;
+  }
+
+  /*******************************************************/
+  /* NAVIGATION */
+  nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+  }
+
+  /* RWD MENU PLUGIN */
+  .menu-button {
+    /* turn on */
+    display: block;
+    visibility: visible;
+  }
+  .menu-item {
+    /* turn off */
+    /* display: none; */
+
+    /* turn off in another way in order to add transition */
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+
+    /* some styling when in dropdown mode */
+    text-align: right;
+    width: 100%;
+    padding: 0.5em 0;
+  }
+
+  /* W3SCHOOLS.COM PROJECTS DROPDOWN */
+  nav .dropdown-content {
+    position: absolute;
+    top: 110px;
+    right: 31px;
+  }
+  /* nav .padding {
+    padding: 1.0em 0;
+  } */
+
+  /*******************************************************/
+  /* HOME PAGE */
+  #home nav .dropdown-content {
+    top: 30px;
+    right: 0;
+  }
+  #home .about {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0;
+  }
+  #home .about img {
+    width: 100%;
+  }
+  #home .project-images .box {
+    margin: 1.0em auto;
+  }
+
+  /*******************************************************/
+  /* RESUME PAGE */
+  #resume nav .dropdown-content {
+    top: 30px;
+    right: 0;
+  }
+  #resume .download {
+    margin-right: 13.0em;
+  }
+
+  /*******************************************************/
+  /* WIREFRAME PAGE */
+  #wireframe nav .dropdown-content {
+    top: 30px;
+    right: 0;
+  }
+  #header2 .headline {
+    width: 85%;
+  }
+  #wireframe article {
+    display: flex;
+    align-items: center;
+    padding: 3.0em 0 0;
+  }
+  #wireframe .content {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /*******************************************************/
+  /* WEB APP PAGE */
+  #webapp nav .dropdown-content {
+    top: 30px;
+    right: 0;
+  }
+  #webapp article {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  #webapp article section {
+    padding: 1.0em 0;
+  }
+  #webapp span {
+    padding-bottom: 0;
+  }
+
+  /*******************************************************/
+  /* TYPOGRAPHY PAGE */
+  #typography nav .dropdown-content {
+    top: 30px;
+    right: 0;
+  }
+  #typography article section .content {
+    flex-direction: column;
+  }
+  #typography section p {
+    margin-top: 2.0em;
+    margin-bottom: 0;
+    padding-right: 3.0em;
+  }
+  #typography .button {
+    margin: 2.0em 0 0;
+  }
+  #typography .button:hover {
+    width: 125px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+
+/* MEDIA QUERIES FROM LARGEST TO SMALLEST */
+/* Extra small devices (portrait phones, less than 576px) */
+/* @media (max-width: 575.98px) {
+
+} */
+
+/* Small devices (landscape phones, less than 768px) */
+/* @media (max-width: 767.98px) {
+
+} */
+
+/* Medium devices (tablets, less than 992px) */
+/* @media (max-width: 991.98px) {
+
+} */
+
+/* Large devices (desktops, less than 1200px) */
+/* @media (max-width: 1199.98px) {
+
+} */
+
+/* Extra large devices (large desktops)
+No media query since the extra-large breakpoint has no upper bound on its width */
+
+.menu-dropdown {
+  /* class to add to show hidden menu items on click */
+  display: block;
+  /* add transition */
+  position: static;
+  visibility: visible;
+  opacity: 1;
+}
