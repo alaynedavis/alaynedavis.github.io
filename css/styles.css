@@ -341,6 +341,18 @@ footer h3, footer p {
 
 /* CODING PAGE STYLES */
 /***********************************************/
+#coding .project-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 50px;
+}
+
+#coding p {
+  width: 900px;
+}
+
 iframe {
   height: 400px;
   width: 900px;
