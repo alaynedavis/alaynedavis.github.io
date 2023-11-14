@@ -66,12 +66,12 @@ h1 {
 }
 
 h2 {
-  font-size: 100px;
+  font-size: 110px;
   font-family: "kepler-std", serif;
   font-weight: 900;
   font-style: normal;
   text-align: center;
-  margin: 50px 0 30px;
+  margin: 50px 0 10px;
 }
 
 .orange {
@@ -94,6 +94,11 @@ h3 {
   color: var(--charcoal);
   margin: 1.0em 0 0.5em;
   text-align: center;
+}
+
+.footer {
+  margin: 0 0 0.5em;
+  padding: 0;
 }
 
 h4 {
@@ -121,7 +126,24 @@ nav li {
 }
 
 /* BUTTONS AND LINKS */
+.button {
+  font-family: "kepler-std", serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--charcoal);
+  background-color: var(--beige);
+  border: 2px solid var(--charcoal);
+  border-radius: 10px;
+  padding: 0.4em 2.0em;
+  margin: 40px 0;
+}
 
+.button:hover {
+  color: var(--beige);
+  background-color: var(--charcoal);
+  border: 2px solid var(--charcoal);
+}
 
 /* NAVIGATION */
 nav {
@@ -358,8 +380,17 @@ iframe {
   margin: 1.0em 0 0;
 }
 
+#design h3 {
+  margin-top: 110px;
+}
+
+#design .footer {
+  margin: 1.0em 0 0.5em;
+}
+
 #design h4 {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 #design .project-section {
@@ -372,10 +403,9 @@ iframe {
 
 #design p {
   width: 900px;
-  margin-bottom: 40px;
 }
 
-#design .button {
+/* #design .button {
   font-family: "kepler-std", serif;
   font-weight: 500;
   font-size: 20px;
@@ -392,7 +422,7 @@ iframe {
   color: var(--beige);
   background-color: var(--charcoal);
   border: 2px solid var(--charcoal);
-}
+} */
 
 #design .imgs {
   display: flex;
@@ -422,8 +452,24 @@ iframe {
 }
 
 #design .buttons {
-  width: 255px;
+  width: 305px;
   margin-left: 50px;
+}
+
+#design .letter {
+  width: 300px;
+}
+
+#design .word {
+  width: 900px;
+}
+
+#design .list {
+  width: 370px;
+}
+
+#design .system {
+  width: 420px;
 }
 
 /* MEDIA QUERIES FROM SMALLEST TO LARGEST */

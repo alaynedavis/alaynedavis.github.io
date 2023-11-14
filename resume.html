@@ -2,70 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <!-- resets browser defaults -->
+    <!-- RESETS BROWSER DEFAULTS -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <!-- other links for fontss/etc go here -->
-    <!-- font awesome icons -->
+    <!-- FONT AWESOME ICONS -->
     <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
-    <!-- custom styles -->
+    <!-- ADOBE FONTS -->
+    <link rel="stylesheet" href="https://use.typekit.net/wvk4obh.css">
+    <!-- BOOTSTRAP STYLES -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CUSTOM STYLES -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://use.typekit.net/jjf6iut.css">
+    <title>Resume</title>
 </head>
 <body>
+    <main class="resume">
 
-    <main id="resume">
         <nav>
-            <a class="name" href="index.html">
-                <h1>Alayne Davis</h1>
-            </a>
             <ul>
-                <li class="menu-button">
-                    <span class="open-menu" aria-label="Open main menu"><i class="fa-solid fa-bars fa-2xl"></i><span class="sr-only">Open main menu</span></span>
-                    <span class="close-menu" aria-label="Close main menu"><i class="fa-solid fa-times fa-2xl"></i><span class="sr-only">Close main menu</span></span>
-                </li>
-                <li><a class="menu-item" href="index.html">Home</a></li>
-                <li class="dropdown menu-item" >
-                    <span><i class="fa-solid fa-angle-down"></i>Projects</span>
-                    <div class="dropdown-content">
-                        <a href="wireframe.html">Wireframe</a>
-                        <a href="webapp.html">Web App</a>
-                        <a href="typography.html">Typography</a>
-                    </div>
-                </li>
-                <li><a class="menu-item" href="#contact">Contact</a></li>
+                <li><a class="menuItem" href="index.html">HOME</a></li>
+                <li><a class="menuItem" href="projects.html">PROJECTS</a></li>
+                <li><a class="menuItem" href="resume.html">RESUME</a></li>
+                <li><a class="menuItem" href="#contact">CONTACT</a></li>
             </ul>
+            <div class="nav-line"></div>
         </nav>
-        
-        <header id="header1">
-            <div class="headline">
-                <div class="headline-content">
-                    <p>Current <br> Informatics student, <br> Aspiring designer</p>
-                    <a class="button" href="#button">Learn More</a>
-                </div>
-            </div>
+
+        <header id="header">
+            <h1>RESUME</h1>
         </header>
 
-        <article id="button">
-            <h1>RESUME</h1>
-            <div class="download">
-                <a href="images/Resume.pdf" download>Download Resume</a>
-                <i class="fa-light fa-arrow-down-to-square"></i>
-            </div>
-            <img src="images/Resume.webp" alt="resume">
-        </article>
+        <section>
+            
+        </section>
 
         <footer id="contact">
-            <h2>Contact Info</h2>
+            <h3 class="footer">CONTACT INFO</h3>
                 <p>Email: alaynecdavis@gmail.com</p>
                 <p>Phone: (812) 371-0122</p>
         </footer>
-
     </main>
-
-    <!-- Updated RWD JavaScript -->
-    <script src="./js/rwd_nav.js"></script>
 </body>
 </html>
