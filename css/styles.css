@@ -124,10 +124,10 @@ nav li {
 
 /* NAVIGATION */
 nav {
-  position: sticky;
+  /* position: sticky;
   z-index: 10;
   top: 0;
-  left: 0;
+  left: 0; */
   display: flex;
   margin: 0;
   padding: 1.0em 0 1.0em 0.7em;
@@ -343,8 +343,65 @@ iframe {
 
 /* GRAPHIC DESIGN PAGE STYLES */
 /***********************************************/
+#design section {
+  padding: 4.0em;
+}
+
 #design h1 {
   margin: -0.5em 0 0.5em;
+}
+
+#design .package-redesign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#design p {
+  width: 900px;
+  margin-bottom: 40px;
+}
+
+#design .button {
+  font-family: "kepler-std", serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--charcoal);
+  background-color: var(--beige);
+  border: 2px solid var(--charcoal);
+  border-radius: 10px;
+  padding: 0.2em 1.0em;
+  margin-bottom: 40px;
+}
+
+#design .button:hover {
+  color: var(--beige);
+  background-color: var(--charcoal);
+  border: 2px solid var(--charcoal);
+}
+
+#design .carousels {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#design .orig {
+  margin-right: 225px;
+}
+
+#design .orig-img {
+  width: 400px;
+}
+
+#design .redesign {
+  margin-left: 225px;
+}
+
+#design .redesign-img {
+  width: 400px;
 }
 
 
