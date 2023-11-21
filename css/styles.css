@@ -349,6 +349,10 @@ footer h3, footer p {
   margin: 0 0 50px;
 }
 
+#coding img {
+  width: 500px;
+}
+
 #coding p {
   width: 900px;
 }
